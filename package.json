@@ -1,9 +1,9 @@
 {
-  "name": "kony-storage-plugin",
+  "name": "cordova-plugin-kony-storage",
   "version": "0.0.1",
-  "description": "Plugin to obtain local kony storage values for a key",
+  "description": "Retrieve local kony storage values from keys",
   "cordova": {
-    "id": "kony-storage-plugin",
+    "id": "cordova-plugin-kony-storage",
     "platforms": [
       "android",
       "ios"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/okode/appcol/localPlugins/KonyStorage"
+    "url": "https://github.com/okode/cordova-plugin-kony-storage"
   },
   "keywords": [
     "ecosystem:cordova",
