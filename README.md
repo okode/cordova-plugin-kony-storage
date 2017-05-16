@@ -6,7 +6,6 @@ Add plugin
 
 ```
 $ cordova plugin add https://github.com/okode/cordova-plugin-kony-storage --save
-
 ```
 
 Remove plugin
@@ -14,14 +13,12 @@ Remove plugin
 
 ```
 $ cordova plugin remove cordova-plugin-kony-storage
-
 ```
 
 Remove reference in config.xml file
 
 ```
 <plugin name="cordova-plugin-kony-storage" spec="https://github.com/okode/cordova-plugin-kony-storage"/>
-
 ```
 
 Usage
