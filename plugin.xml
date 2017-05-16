@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="kony-storage-plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>KonyStorage</name>
+
+  <js-module name="KonyStorage" src="www/KonyStorage.js">
+    <clobbers target="window.konyStore" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="KonyStorage">
+        <param name="android-package" value="kony.storage.plugin.KonyStorage" />
+      </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml">
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    </config-file>
+    <source-file src="src/android/KonyStorage.java" target-dir="src/kony.storage.plugin/KonyStorage" />
+    <source-file src="src/android/DBHelper.java" target-dir="src/kony.storage.plugin/DBHelper" />
+    <source-file src="src/android/LocalStorage.java" target-dir="src/kony.storage.plugin/LocalStorage" />
+    <source-file src="src/android/LuaNil.java" target-dir="src/com.konylabs.vm/LuaNil" />
+    <source-file src="src/android/LuaTable.java" target-dir="src/com.konylabs.vm/LuaTable" />
+    <source-file src="src/android/TableEnumeration.java" target-dir="src/com.konylabs.vm/TableEnumeration" />
+  </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file parent="/*" target="config.xml">
+      <feature name="KonyStorage">
+        <param name="ios-package" value="KonyStorage" />
+      </feature>
+    </config-file>
+    <source-file src="src/ios/KonyStorage.m" />
+  </platform>
+</plugin>
