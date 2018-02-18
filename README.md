@@ -35,4 +35,4 @@ if (typeof konyStore != 'undefined') {
 API Documentation
 -----------------
 
-See `typings/kony-storage-plugin.d.ts` for documentation of the JavaScript APIs including call signatures and parameter types.
+See `typings/cordova-plugin-kony-storage.d.ts` for documentation of the JavaScript APIs including call signatures and parameter types.
