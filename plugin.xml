@@ -16,12 +16,12 @@
     <config-file parent="/*" target="AndroidManifest.xml">
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     </config-file>
-    <source-file src="src/android/KonyStorage.java" target-dir="src/kony.storage.plugin/KonyStorage" />
-    <source-file src="src/android/DBHelper.java" target-dir="src/kony.storage.plugin/DBHelper" />
-    <source-file src="src/android/LocalStorage.java" target-dir="src/kony.storage.plugin/LocalStorage" />
-    <source-file src="src/android/LuaNil.java" target-dir="src/com.konylabs.vm/LuaNil" />
-    <source-file src="src/android/LuaTable.java" target-dir="src/com.konylabs.vm/LuaTable" />
-    <source-file src="src/android/TableEnumeration.java" target-dir="src/com.konylabs.vm/TableEnumeration" />
+    <source-file src="src/android/KonyStorage.java" target-dir="src/kony/storage/plugin" />
+    <source-file src="src/android/DBHelper.java" target-dir="src/kony/storage/plugin" />
+    <source-file src="src/android/LocalStorage.java" target-dir="src/kony/storage/plugin" />
+    <source-file src="src/android/LuaNil.java" target-dir="src/com/konylabs/vm" />
+    <source-file src="src/android/LuaTable.java" target-dir="src/com/konylabs/vm" />
+    <source-file src="src/android/TableEnumeration.java" target-dir="src/com/konylabs/vm" />
   </platform>
 
   <!-- ios -->
